@@ -50,6 +50,13 @@
         <div class="searchbar">
           <input type="text" class="searc-bar" placeholder="Search" />
         </div>
+        <div class="bars">
+          <div>
+            <i class="fas fa-bars fa-3x" id="barsIcon" onclick="showButton('bar')"></i>
+            <i class="fas fa-times fa-3x" id="closeIcon" onclick="showButton('cross')"></i>
+          </div>
+          
+        </div>
       </div>
       <div id="float-menu">
         <div class="float-menu-men">
@@ -75,8 +82,27 @@
           </div>
         </div>
       </div>
-    </header>
 
+
+
+    </header>
+    <div class="menubar-mobile">
+      <div class="menubar-mobile-bar">
+        <ul>
+          <li id="menubar-mobile-men" >Men</li>
+          <li>Ladies</li>
+          <li>Big & tall</li>
+          <li>Fan shop</li>
+          <li>Pro Shop</li>
+          <li>Collections</li>
+          <li>Sale</li>
+        </ul>
+      </div>
+      <div class="searchbar-mobile">
+        <input type="text" class="searc-bar" placeholder="Search" />
+      </div>
+  </div>
+    <div class="content-all">
     <section id="banner">
       <div class="banner-image"></div>
 
@@ -133,10 +159,8 @@
           </div>
         </div>
        
-      </div>
 
     </section>
-
     <section class="popular-product-corner">
       <div class="content-popular-content">
         <h2>Popular Products</h2>
@@ -173,7 +197,6 @@
         </div>
       </div>
     </section>
-
     <section class="join-us-email">
       <div class="join-content">
         <h4>Join our mailing list to receive email exclusives and save $15 on your first order.
@@ -226,6 +249,7 @@
         </div>
       </div>
     </section>
+
     <footer>
       <div class="content-footer">
         <span>©Copyright 2020 Cutter & Buck</span>
@@ -234,5 +258,6 @@
         <span>Employee Login |</span>
       </div>
     </footer>
+  </div>
   </body>
 </html>

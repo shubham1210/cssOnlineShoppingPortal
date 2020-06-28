@@ -5,6 +5,7 @@
   --shadow: 0 0px 5px rgba(104, 104, 104, 0.8);
   --red: red;
   --blue: #072a48;
+  --grey: #e5e5e5;
 }
 
 body {
@@ -97,12 +98,14 @@ body {
   color: var(--red);
 }
 
-.nav-header .searchbar {
+.nav-header .searchbar,
+.searchbar-mobile {
   text-align: right;
   padding: 2em;
 }
 
-.nav-header .searc-bar {
+.nav-header .searc-bar,
+.searchbar-mobile {
   padding: 0.4rem;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   width: 10.5rem;
@@ -372,4 +375,98 @@ footer {
 
 .content-footer span {
   margin-left: 1rem;
+}
+
+#closeIcon {
+  display: none;
+}
+/* .content-all {
+  display: di;
+} */
+
+.menubar-mobile {
+  display: none;
+  background-color: var(--grey);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.bars {
+  display: none;
+}
+/* anything lesser than 500px */
+@media (max-width: 1041px) {
+  .menu-bar,
+  .searchbar {
+    display: none;
+  }
+
+  .nav-header {
+    grid-template-columns: 100px 1fr;
+  }
+  .bars {
+    display: block;
+    margin-left: auto;
+    padding: 1rem;
+  }
+  .mainHeader {
+    position: relative;
+  }
+  .menubar-mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+  .menubar-mobile ul {
+    list-style: none;
+    padding: 1rem;
+  }
+
+  .menubar-mobile ul li {
+    list-style: none;
+    padding: 0.5rem;
+  }
+
+  .shop-button {
+    display: grid;
+  }
+  .shop-button button:first-child {
+    margin-bottom: 1rem;
+  }
+  .content-banner h1 {
+    font-size: 30px;
+    font-weight: 100;
+  }
+  .content-banner h2 {
+    font-size: 20px;
+    font-weight: 50;
+  }
+  #banner {
+    padding-top: 0rem;
+  }
+  .category {
+    grid-template-columns: 1fr;
+  }
+  .category .card .card-image1,
+  .category .card .card-image2,
+  .category .card .card-image3 {
+    background-position: top left;
+  }
+
+  #discover-content-grid {
+    grid-template-columns: 1fr;
+  }
+  .image-products {
+    grid-template-columns: 1fr;
+  }
+  .image-products img {
+    max-width: 400px;
+  }
+  .about-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .about-content a {
+    display: flex;
+    flex-direction: column;
+  }
 }
